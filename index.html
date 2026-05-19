@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SnackSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER / LOGO -->
+    <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" class="logo">
+        <h1>SnackSphere</h1>
+    </div>
+
+    <!-- INPUTS -->
+
+    <input type="text" id="searchInput" placeholder="Search food..." onkeyup="filterFoods()">
+
+
+    <div class="category-buttons">
+
+    <button onclick="filterByCategory('all')">All</button>
+    <button onclick="filterByCategory('pizza')">Pizza</button>
+    <button onclick="filterByCategory('burger')">Burger</button>
+    <button onclick="filterByCategory('shawarma')">Shawarma</button>
+    <button onclick="filterByCategory('drink')">Drinks</button>
+
+</div>
+
+    <input type="text" id="foodName" placeholder="Food Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="text" id="category" placeholder="Category">
+
+    <button onclick="addFood()">Add Food</button>
+
+    <!-- FOOD LIST -->
+    <div id="foodList"></div>
+
+    <h2 id="total">Total: ₹0</h2>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
