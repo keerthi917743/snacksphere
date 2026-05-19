@@ -1,40 +1,71 @@
-# SnackSphere - Food Ordering Web App
+# 🍔 SnackSphere - Food Ordering System (Full Stack Project)
 
-SnackSphere is a simple food ordering web application built using HTML, CSS, JavaScript, and JSON Server.
+A full-stack **Food Ordering System web application** built using **Spring Boot (Java)** for backend and **HTML, CSS, JavaScript** for frontend.  
+This project simulates a basic online food ordering platform with cart functionality and backend API structure.
 
-It allows users to add, view, edit, delete, search, and filter food items, along with a cart system.
+---
+## 🛠️ Tech Stack
+
+### Frontend:
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
+
+### Backend:
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+- Maven
 
 ---
 
-## Features
+## 📁 Project Structure
 
-- Add food items  
-- View food list  
-- Edit food items  
-- Delete food items  
-- Live search  
-- Category filter  
-- Add to cart  
-- Total price calculation  
-- API integration (JSON Server)  
+food-ordering-system/
+│
+├── frontend/
+│ ├── index.html
+│ ├── style.css
+│ ├── script.js
+│ └── images
+│
+├── backend/
+│ └── foodorderingsystem/
+│ ├── src/
+│ │ ├── main/java/com/example/foodordering/system/
+│ │ │ ├── controller/
+│ │ │ ├── service/
+│ │ │ ├── repository/
+│ │ │ └── entity/
+│ │ └── resources/
+│ ├── pom.xml
+│ └── mvnw
+---
+
+## ✨ Features
+
+- 🍕 Display food items with images
+- 🛒 Add items to cart functionality
+- ➕ Increase / decrease quantity
+- 💰 Automatic total price calculation
+- 📦 REST API-based backend system
+- 🧩 Clean MVC architecture (Controller → Service → Repository)
 
 ---
 
-## Technologies Used
+## 🔗 API Endpoints
 
-- HTML  
-- CSS  
-- JavaScript  
-- JSON Server  
-- Fetch API  
+| Method | Endpoint        | Description            |
+|--------|----------------|------------------------|
+| GET    | /foods         | Get all food items     |
+| POST   | /foods         | Add new food item      |
+| DELETE | /foods/{id}    | Remove food item       |
 
 ---
 
-## How to Run
+## ⚙️ How to Run Project
 
-1. Clone the repository  
-2. Open in VS Code  
-3. Start JSON server  
+### 1️⃣ Clone Repository
 ```bash
-npx json-server --watch db.json --port 5252# snacksphere
-A responsive food ordering web app with CRUD operations, live search, category filtering, cart system, and dynamic image rendering using HTML, CSS, JavaScript, and JSON server.
+git clone https://github.com/keerthi917743/snacksphere.git
