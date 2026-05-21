@@ -1,28 +1,42 @@
-# 🍔 SnackSphere - Food Ordering System (Full Stack Project)
+# 🍔 SnackSphere – Full Stack Food Menu & Cart Management System
 
-A full-stack **Food Ordering System web application** built using **Spring Boot (Java)** for backend and **HTML, CSS, JavaScript** for frontend.  
-This project simulates a basic online food ordering platform with cart functionality and backend API structure.
+## 📖 About The Project
 
----
-## 🛠️ Tech Stack
+SnackSphere is a full-stack food web application developed using frontend technologies and Java Spring Boot backend architecture.  
+The application allows users to browse food items, view categories, and manage cart functionality through a clean, responsive, and interactive user interface.
 
-### Frontend:
-- HTML
-- CSS
-- JavaScript (Vanilla JS)
+## Features:
+-  Browse food items
+-  Display food images and categories
+-  Add items to cart
+-  Remove items from cart
+-  Dynamic total price calculation
+-  Responsive and modern UI
+-  Interactive user experience
+-  Frontend and backend integration
+-  Clean and organized project
+  
+### 🛠️Tech Stack
 
-### Backend:
+## Frontend:
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend:
 - Java
 - Spring Boot
 - Spring MVC
 - Spring Data JPA
 - Maven
 
----
+## Database
+- MySQL
+
 
 ## 📁 Project Structure
-
-food-ordering-system/
+---
+SnackSphere/
 │
 ├── frontend/
 │ ├── index.html
@@ -31,41 +45,58 @@ food-ordering-system/
 │ └── images
 │
 ├── backend/
-│ └── foodorderingsystem/
-│ ├── src/
-│ │ ├── main/java/com/example/foodordering/system/
-│ │ │ ├── controller/
-│ │ │ ├── service/
-│ │ │ ├── repository/
-│ │ │ └── entity/
-│ │ └── resources/
-│ ├── pom.xml
-│ └── mvnw
----
-
-## ✨ Features
-
-- 🍕 Display food items with images
-- 🛒 Add items to cart functionality
-- ➕ Increase / decrease quantity
-- 💰 Automatic total price calculation
-- 📦 REST API-based backend system
-- 🧩 Clean MVC architecture (Controller → Service → Repository)
+│   ├── src/main/java/
+│   │   ├── controller/
+│   │   ├── service/
+│   │   ├── repository/
+│   │   ├── model/
+│   │   └── SnackSphereApplication.java
+│   │
+│   └── src/main/resources/
+     └── application.properties
 
 ---
-
 ## 🔗 API Endpoints
 
-| Method | Endpoint        | Description            |
+| Method | Endpoint        | Description           |
 |--------|----------------|------------------------|
 | GET    | /foods         | Get all food items     |
 | POST   | /foods         | Add new food item      |
 | DELETE | /foods/{id}    | Remove food item       |
 
----
+# ⚙️ How to Run Project
 
-## ⚙️ How to Run Project
+## 1️⃣ Clone Repository
 
-### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/keerthi917743/snacksphere.git
+```
+
+## 2️⃣ Navigate to Project Folder
+
+```bash
+cd snacksphere
+```
+
+## 3️⃣ Run Backend
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+## 4️⃣ Run Frontend
+
+Open:
+
+```bash
+frontend/index.html
+```
+
+# 🗄️ Database Configuration
+
+Update your MySQL configuration inside:
+
+```properties
+application.properties
+```
