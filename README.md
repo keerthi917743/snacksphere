@@ -9,7 +9,6 @@ The application allows users to browse food items, view categories, and manage c
 -  Browse food items
 -  Display food images and categories
 -  Add items to cart
--  Remove items from cart
 -  Dynamic total price calculation
 -  Responsive and modern UI
 -  Interactive user experience
