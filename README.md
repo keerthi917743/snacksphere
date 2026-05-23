@@ -1,8 +1,8 @@
-# 🍔 SnackSphere – Full Stack Food Menu & Cart Management System
+# 🍔 SnackSphere – Food Menu & Cart Management System
 
 ## 📖 About The Project
 
-SnackSphere is a full-stack food web application developed using frontend technologies and Java Spring Boot backend architecture.  
+SnackSphere is a food web application developed using frontend technologies and Java Spring Boot backend architecture.  
 The application allows users to browse food items, view categories, and manage cart functionality through a clean, responsive, and interactive user interface.
 
 ## Features:
